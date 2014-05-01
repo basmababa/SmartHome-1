@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度调节："
+            android:layout_marginLeft="15dp"/>
+        
+        <TextView 
+            android:id="@+id/brightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+        
+    </LinearLayout>
+    
+    <SeekBar 
+        android:id="@+id/brightSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="14"
+        android:layout_margin="10dp"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分辨率调节："
+            android:layout_marginLeft="15dp"/>
+        
+        <TextView 
+            android:id="@+id/resolutionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="160*120"/>
+        
+    </LinearLayout>
+    
+    <SeekBar 
+        android:id="@+id/resolutionSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="2"
+        android:layout_margin="10dp"/>
+	
+
+</LinearLayout>
